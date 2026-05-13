@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Service — Zalazar Holdings LLC</title>
+  <link rel="icon" href="salazar-enh-logo.svg" type="image/svg+xml"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #faf8f3;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5a5a5a;
+      --dark: #111111;
+      --gold: #b18300;
+      --gold-bright: #eaac0b;
+      --gold-deep: #624f24;
+      --gold-light: #f5ecd1;
+      --border: #e5e0d3;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 78px; position: sticky; top: 0; z-index: 100;
+    }
+    .nav-brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--text); }
+    .nav-logo { width: 52px; height: 52px; }
+    .nav-name { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 19px; letter-spacing: 0.02em; }
+    .nav-name span { color: var(--gold); }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a {
+      text-decoration: none; color: var(--muted);
+      font-size: 14px; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+
+    /* HERO */
+    .page-hero {
+      background: var(--dark); color: #fff;
+      padding: 70px 40px 60px; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 70% 30%, rgba(234,172,11,0.15) 0%, transparent 55%),
+        radial-gradient(ellipse at 20% 80%, rgba(177,131,0,0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .page-hero h1 {
+      position: relative;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 48px);
+      margin-bottom: 14px; font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+    .page-hero h1 em { font-style: italic; color: var(--gold-bright); font-weight: 400; }
+    .page-hero p {
+      position: relative; font-size: 14px;
+      color: rgba(255,255,255,0.65);
+      letter-spacing: 0.08em; text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    /* CONTENT */
+    .content-wrap { max-width: 820px; margin: 0 auto; padding: 70px 24px 90px; }
+
+    .toc {
+      background: var(--surface);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 4px 4px 0;
+      padding: 26px 30px;
+      margin-bottom: 56px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+    }
+    .toc h2 {
+      font-size: 12px; text-transform: uppercase;
+      letter-spacing: 0.18em; color: var(--gold);
+      font-weight: 700; margin-bottom: 14px;
+    }
+    .toc ol { padding-left: 22px; }
+    .toc li { margin-bottom: 6px; }
+    .toc a {
+      color: var(--gold-deep); font-size: 14px;
+      font-weight: 600; text-decoration: none;
+    }
+    .toc a:hover { color: var(--gold); text-decoration: underline; }
+
+    section { margin-bottom: 52px; }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px; font-weight: 500;
+      color: var(--dark); margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: -0.01em;
+    }
+    section h2 em { font-style: italic; color: var(--gold); font-weight: 400; }
+    section p { color: var(--muted); margin-bottom: 14px; font-weight: 300; }
+    section ul { padding-left: 22px; color: var(--muted); margin-bottom: 14px; font-weight: 300; }
+    section ul li { margin-bottom: 8px; }
+    section a { color: var(--gold); font-weight: 600; }
+
+    .highlight-box {
+      background: #fff9e8;
+      border: 1px solid #d8be62;
+      border-left: 4px solid var(--gold-bright);
+      border-radius: 4px;
+      padding: 22px 26px;
+      margin: 22px 0;
+    }
+    .highlight-box p { color: #4a3a00; margin: 0; font-size: 15px; font-weight: 400; }
+
+    /* FOOTER */
+    footer { background: var(--dark); color: rgba(255,255,255,0.6); text-align: center; padding: 40px 24px; font-size: 14px; }
+    footer a { color: rgba(255,255,255,0.85); text-decoration: none; }
+    footer a:hover { color: var(--gold-bright); }
+    .footer-links { margin-bottom: 14px; display: flex; gap: 28px; justify-content: center; flex-wrap: wrap; font-size: 13px; }
+    footer .copyright { font-size: 12px; color: rgba(255,255,255,0.45); }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 20px; height: 68px; }
+      .nav-logo { width: 44px; height: 44px; }
+      .nav-name { font-size: 16px; }
+      .nav-links { gap: 18px; }
+      .nav-links a { font-size: 12px; }
+      .content-wrap { padding: 50px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">
+    <img src="salazar-enh-logo.svg" alt="Zalazar Holdings" class="nav-logo"/>
+    <span class="nav-name">Zalazar <span>Holdings</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="privacy-policy.html">Privacy</a></li>
+    <li><a href="terms-of-service.html" class="active">Terms</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <h1>Terms of <em>Service</em></h1>
+  <p>Last updated: May 13, 2026 &nbsp;·&nbsp; Effective immediately</p>
+</div>
+
+<div class="content-wrap">
+
+  <div class="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#acceptance">Acceptance of Terms</a></li>
+      <li><a href="#services">Description of Services</a></li>
+      <li><a href="#sms-terms">SMS Messaging Terms</a></li>
+      <li><a href="#eligibility">Eligibility</a></li>
+      <li><a href="#user-responsibilities">Guest &amp; User Responsibilities</a></li>
+      <li><a href="#bookings">Bookings &amp; Third-Party Platforms</a></li>
+      <li><a href="#intellectual-property">Intellectual Property</a></li>
+      <li><a href="#disclaimer">Disclaimer of Warranties</a></li>
+      <li><a href="#limitation">Limitation of Liability</a></li>
+      <li><a href="#indemnification">Indemnification</a></li>
+      <li><a href="#termination">Termination</a></li>
+      <li><a href="#governing-law">Governing Law</a></li>
+      <li><a href="#changes">Changes to These Terms</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <section id="acceptance">
+    <h2>1. Acceptance of Terms</h2>
+    <p>These Terms of Service ("Terms") govern your access to and use of the website and services provided by Zalazar Holdings LLC ("Zalazar Holdings," "we," "our," or "us"), a Limited Liability Company located at 61 Franklin Ave, Hawthorne, New Jersey 07506, United States.</p>
+    <p>By visiting our website, submitting your information through our contact form, or booking a stay at any of our rental properties, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our website or services.</p>
+  </section>
+
+  <section id="services">
+    <h2>2. Description of Services</h2>
+    <p>Zalazar Holdings LLC is a real estate investment firm that has been operating since 2008. We offer luxurious yet affordable short-term rental accommodations in a variety of locations, including but not limited to:</p>
+    <ul>
+      <li>Beachfront and ocean-view condos in Punta Cana and other coastal areas</li>
+      <li>Family villas with private pools in Juan Dolio and similar destinations</li>
+      <li>Urban apartments in city centers within walking distance of restaurants, banks, and shopping</li>
+      <li>Resort-style suites and penthouses with infinity pools, jacuzzis, and golf views</li>
+    </ul>
+    <p>Our services include direct guest support, booking and reservation coordination, pre-arrival communications, check-in assistance, and on-stay customer service. We reserve the right to modify, suspend, or discontinue any aspect of our services at any time. We will make reasonable efforts to notify guests of significant changes to ongoing bookings.</p>
+  </section>
+
+  <section id="sms-terms">
+    <h2>3. SMS <em>Messaging Terms</em></h2>
+
+    <div class="highlight-box">
+      <p><strong>SMS Consent:</strong> By checking the SMS opt-in box on our website and submitting your phone number, you provide express written consent to receive SMS/text messages from Zalazar Holdings LLC. This consent is not a condition of purchasing any goods, services, or booking any rental property.</p>
+    </div>
+
+    <p><strong>Program description:</strong> Zalazar Holdings LLC sends SMS messages to communicate with prospective and confirmed guests about our rental properties and bookings. Messages may include: responses to inquiries, availability and pricing information, booking confirmations, pre-arrival instructions, check-in addresses and access codes on the day of arrival, utility payment requests for applicable units (e.g., certain Punta Cana properties), and customer service responses during your stay.</p>
+    <p><strong>Message frequency:</strong> Message frequency varies based on your inquiry and the timing of your stay. Most guests receive between 2 and 10 messages per booking cycle.</p>
+    <p><strong>Message and data rates:</strong> Standard message and data rates may apply. Please check with your mobile carrier for details.</p>
+    <p><strong>How to opt out:</strong> You may opt out of SMS communications at any time by replying <strong>STOP</strong> to any message we send. After opting out, you will receive a single confirmation message and no further SMS messages will be sent to your number. You may opt back in at any time by replying <strong>START</strong>.</p>
+    <p><strong>How to get help:</strong> Reply <strong>HELP</strong> to any of our messages for assistance, or contact us directly at <a href="mailto:info@zalazarholdings.com">info@zalazarholdings.com</a> or <a href="tel:+18885513007">+1 (888) 551-3007</a>.</p>
+    <p><strong>No sharing of SMS data:</strong> Your phone number and SMS opt-in consent data will not be shared with any third parties for marketing or promotional purposes. All SMS opt-in data is excluded from any third-party data sharing arrangements.</p>
+    <p><strong>Supported carriers:</strong> Most major US carriers are supported. Carrier support is not guaranteed for all carriers. Zalazar Holdings LLC is not responsible for delays or failed delivery of messages caused by your mobile carrier.</p>
+  </section>
+
+  <section id="eligibility">
+    <h2>4. Eligibility</h2>
+    <p>Our services are intended for travelers aged 18 and older. By using our website and booking a stay, you represent and warrant that you are at least 18 years of age and have the legal authority to enter into these Terms on behalf of yourself and any other guests in your party. Minors may stay at our properties only as part of a family or group booking made by a responsible adult guest.</p>
+  </section>
+
+  <section id="user-responsibilities">
+    <h2>5. Guest &amp; User Responsibilities</h2>
+    <p>When using our website and staying at our properties, you agree to:</p>
+    <ul>
+      <li>Provide accurate, current, and complete information when submitting forms, booking, or checking in.</li>
+      <li>Present a valid government-issued photo ID at check-in when required by the local property (e.g., for security and verification purposes in Punta Cana).</li>
+      <li>Respect property house rules, including check-in (3 PM) and check-out (10 AM) times, unless other arrangements have been confirmed in writing.</li>
+      <li>Pay any applicable utility fees or local charges as separately requested before check-in for properties where utilities are not included.</li>
+      <li>Use our properties only for lawful purposes and treat all units, neighbors, and on-site staff with respect.</li>
+      <li>Not transmit, distribute, or store material through our website or systems that is unlawful, harmful, defamatory, or otherwise objectionable.</li>
+      <li>Not attempt to gain unauthorized access to any portion of our website, systems, or servers.</li>
+      <li>Notify us promptly if you believe your information has been compromised.</li>
+    </ul>
+  </section>
+
+  <section id="bookings">
+    <h2>6. Bookings &amp; Third-Party Platforms</h2>
+    <p>Many of our properties are also listed on third-party platforms including Airbnb and VRBO. When you book through one of these platforms, that platform's terms and cancellation policies apply in addition to these Terms. When you book directly with us, our direct booking terms apply, which we will provide at the time of reservation.</p>
+    <p>Some destinations or developments (for example, the Hard Rock complex in Punta Cana) may impose additional rules, fees, or amenity charges (such as beach club access fees) that are independent of your rental rate. These are the responsibility of the guest and not Zalazar Holdings LLC.</p>
+  </section>
+
+  <section id="intellectual-property">
+    <h2>7. Intellectual Property</h2>
+    <p>All content on this website — including text, graphics, logos, images, property listings, and software — is the property of Zalazar Holdings LLC or its content suppliers and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without our express written permission.</p>
+  </section>
+
+  <section id="disclaimer">
+    <h2>8. Disclaimer of Warranties</h2>
+    <p>Our website and services are provided on an "as is" and "as available" basis without warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+    <p>While we make every effort to keep listings, photographs, and availability information accurate and up to date, we do not warrant that all property descriptions, pricing, or availability are error-free. Property conditions, surrounding amenities, and local services can change without notice.</p>
+  </section>
+
+  <section id="limitation">
+    <h2>9. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by applicable law, Zalazar Holdings LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages — including lost profits, lost revenue, loss of data, travel disruptions, or business interruption — arising out of or related to your use of our services or your stay at any of our properties, even if we have been advised of the possibility of such damages.</p>
+    <p>Our total liability to you for any claim arising from these Terms or our services shall not exceed the amount you paid us for the booking giving rise to the claim.</p>
+  </section>
+
+  <section id="indemnification">
+    <h2>10. Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless Zalazar Holdings LLC and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses — including reasonable legal fees — arising out of or in any way connected with your access to or use of our services, your stay at our properties, your violation of these Terms, or your violation of any third-party rights.</p>
+  </section>
+
+  <section id="termination">
+    <h2>11. Termination</h2>
+    <p>We reserve the right to suspend or terminate your access to our services, or to cancel any booking, at our sole discretion, for conduct that we believe violates these Terms, applicable law, or is harmful to other guests, our staff, neighbors, our property, or the public.</p>
+    <p>You may discontinue use of our website at any time. If you are enrolled in SMS communications, reply STOP to opt out immediately.</p>
+  </section>
+
+  <section id="governing-law">
+    <h2>12. Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the State of New Jersey, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the state and federal courts located in Passaic County, New Jersey.</p>
+  </section>
+
+  <section id="changes">
+    <h2>13. Changes to These Terms</h2>
+    <p>We reserve the right to update or modify these Terms at any time. When we do, we will revise the "Last updated" date at the top of this page. Your continued use of our services after any changes constitutes your acceptance of the revised Terms. We encourage you to review this page periodically.</p>
+  </section>
+
+  <section id="contact">
+    <h2>14. Contact <em>Us</em></h2>
+    <p>If you have questions about these Terms of Service, please contact us:</p>
+    <ul>
+      <li><strong>Business Name:</strong> Zalazar Holdings LLC</li>
+      <li><strong>Email:</strong> <a href="mailto:info@zalazarholdings.com">info@zalazarholdings.com</a></li>
+      <li><strong>Phone:</strong> <a href="tel:+18885513007">+1 (888) 551-3007</a></li>
+      <li><strong>Address:</strong> 61 Franklin Ave, Hawthorne, NJ 07506, United States</li>
+      <li><strong>Website:</strong> <a href="https://zalazarholdings.com">https://zalazarholdings.com</a></li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+  <p class="copyright">© 2026 Zalazar Holdings LLC. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
